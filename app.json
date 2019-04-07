@@ -1,12 +1,12 @@
 {
-    "name": "ScrapydWeb APP",
+    "name": "ScrapydWeb app",
     "description": "How to set up Scrapyd cluster on Heroku",
     "repository": "https://github.com/my8100/scrapyd-cluster-on-heroku",
     "logo": "https://raw.githubusercontent.com/my8100/files/master/scrapydweb/icons/spiderman.png",
     "keywords": ["scrapyd", "cluster", "heroku", "scrapy", "scrapyweb", "python", "web-crawling", "web-scraping"],
     "env": {
         "SCRAPYD_SERVER_1": {
-            "description": "You can add more Scrapyd servers in the web UI of Heroku after the APP is bulit, and the key of the environment variable should be like SCRAPYD_SERVER_n (n for a unique integer).",
+            "description": "You can add more Scrapyd servers in the web UI of Heroku after the app is bulit, and the key of the environment variable should be like SCRAPYD_SERVER_n (n for a unique integer).",
             "value": "username:password@svr-1.herokuapp.com:80",
             "required": true
         },
@@ -26,7 +26,7 @@
             "required": false
         },
         "TZ": {
-            "description": "Timezone of the APP, get it via: python -c \"import tzlocal; print(tzlocal.get_localzone())\"",
+            "description": "Timezone of the app, get it via: python -c \"import tzlocal; print(tzlocal.get_localzone())\"",
             "value": "UTC",
             "required": false
         },
